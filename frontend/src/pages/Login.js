@@ -49,11 +49,12 @@ const Login = () => {
     const onsubmit=(e)=>{
       e.preventDefault();
       const userData = {
-         email,
-         password,
+         email:email,
+         password:password,
        };
+       console.log(userData);
        dispatch(login(userData));
-      console.log(formData);
+     
     }
 
     if (isLoading) {
